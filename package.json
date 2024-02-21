@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-server": "cd server && npm start",
     "start-client": "cd client && npm start",
-    "start": "npm-run-all -p start-server start-client"
+    "start": "npm run start-server && npm run start-client"
   },
   "dependencies": {
     "axios": "^1.6.2",
