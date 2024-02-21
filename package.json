@@ -1,14 +1,12 @@
 {
-  "name": "server",
+  "name": "capstone-option-1",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cd server && node server.js"
   },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "axios": "^1.6.2",
     "bcrypt": "^5.1.1",
@@ -23,9 +21,7 @@
     "mongodb": "^6.3.0",
     "mongoose": "^8.0.1"
   },
-  "build": "npm install",
-  "start": "node server.js",
-  "engines": {
-    "node": "14.x"
-  }
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
