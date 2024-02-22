@@ -15,11 +15,11 @@ const app = express();
 app.use(cors());
 app.use(bodyParser.json());
 // Configurando o aplicativo Express
-app.use(express.static(path.join(__dirname, "../", "client", "build")));
-
+app.use(express.static(path.join("client", "build")));
+console.log(__dirname);
 // Rota para servir o index.html
 app.get("*", (req, res) => {
-  res.sendFile(path.resolve(__dirname, "../", "client", "build", "index.html"));
+  res.sendFile(path.resolve("client", "build", "index.html"));
 });
 const verifyToken = (req, res, next) => {
   const token = req.headers.authorization;
