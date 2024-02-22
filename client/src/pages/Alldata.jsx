@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useUser } from "../contexts/UserContext";
 
 const AllData = () => {

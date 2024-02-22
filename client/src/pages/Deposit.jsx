@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import { useUser } from "../contexts/UserContext";
 import axios from "axios";
 import Card from "../components/Card";

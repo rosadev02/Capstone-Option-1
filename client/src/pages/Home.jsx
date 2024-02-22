@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import badBankImage from "../assets/images/Bad-Bank.jpg";
 import { Link } from "react-router-dom";
 import CreateAccount from "../pages/CreateAccount";
