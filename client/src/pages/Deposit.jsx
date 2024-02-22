@@ -73,7 +73,7 @@ const Deposit = () => {
       };
       // Faz a requisição para depositar o valor no banco de dados
       axios.post(
-        `http://localhost:3001/api/deposit/${currentUser.user.email}`,
+        `/api/deposit/${currentUser.user.email}`,
         { amount: deposit, balance: balance + deposit }, // Enviamos o saldo atualizado na requisição
         config
       );

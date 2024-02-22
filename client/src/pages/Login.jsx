@@ -23,7 +23,7 @@ const Login = () => {
     }
 
     axios
-      .post("http://localhost:3001/api/login", { email, password })
+      .post("/api/login", { email, password })
       .then((response) => {
         const user = response.data; // Aqui estamos pegando os dados da resposta e atribuindo à constante user
         console.log("User Info Saved:", user);

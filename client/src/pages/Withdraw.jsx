@@ -75,7 +75,7 @@ const Withdraw = () => {
       };
       // Faz a requisição para depositar o valor no banco de dados
       axios.post(
-        `http://localhost:3001/api/withdraw/${currentUser.user.email}`,
+        `/api/withdraw/${currentUser.user.email}`,
         { amount: withdraw, balance: balance + withdraw }, // Enviamos o saldo atualizado na requisição
         config
       );

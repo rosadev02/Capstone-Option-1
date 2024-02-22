@@ -46,7 +46,7 @@ const CreateAccount = ({ showModal, setShowModal }) => {
       transactions: [], // Inicializa as transações como um array vazio
     };
     axios
-      .post("http://localhost:3001/api/register", newUser)
+      .post("/api/register", newUser)
       .then((response) => {
         console.log("User Info Saved:", response.data);
         setSuccessMessage(true);

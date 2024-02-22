@@ -19,7 +19,7 @@ const Home = () => {
       // Cria um objeto de dados do usuário
 
       axios
-        .post("http://localhost:3001/api/auth0-login", user)
+        .post("/api/auth0-login", user)
         .then((response) => {
           const newUser = response.data; // Extrai o usuário da resposta
           setCurrentUser(newUser); // Define o novo usuário atual
