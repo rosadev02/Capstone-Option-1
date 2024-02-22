@@ -6,15 +6,21 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const connectDb = require("./src/database");
 const checkJwt = require("./MiddlewareAuth0");
+const path = require("path");
 // Importando o modelo do usuário
 const User = require("./src/models/user.model");
 const dotenv = require("dotenv");
 dotenv.config();
-// Configurando o aplicativo Express
 const app = express();
 app.use(cors());
 app.use(bodyParser.json());
+// Configurando o aplicativo Express
+app.use(express.static(path.join("../", "client", "build")));
 
+// Rota para servir o index.html
+app.get("*", (req, res) => {
+  res.sendFile(path.join("../", "client", "build", "index.html"));
+});
 const verifyToken = (req, res, next) => {
   const token = req.headers.authorization;
   if (!token) {
