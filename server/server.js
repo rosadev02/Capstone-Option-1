@@ -8,7 +8,8 @@ const connectDb = require("./src/database");
 const checkJwt = require("./MiddlewareAuth0");
 // Importando o modelo do usuário
 const User = require("./src/models/user.model");
-
+const dotenv = require("dotenv");
+dotenv.config();
 // Configurando o aplicativo Express
 const app = express();
 app.use(cors());
