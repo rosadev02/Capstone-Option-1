@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import CreateAccount from "../pages/CreateAccount";
 import { useUser } from "../contexts/UserContext";
 const Navigation = () => {
